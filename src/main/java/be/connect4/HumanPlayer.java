@@ -1,4 +1,4 @@
-package be.ctg.Connect4.connect4;
+package be.connect4;
 
 import java.util.Scanner;
 
@@ -27,6 +27,7 @@ public class HumanPlayer extends Player {
     @Override
     public void play(Board board) {
         Scanner sc = new Scanner(System.in);
+
 
         while (true) {
             System.out.println("Player " + playerNumber + " - Please select which column to place your piece (1-7):");

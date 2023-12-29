@@ -1,4 +1,4 @@
-package be.ctg.Connect4.connect4;
+package be.connect4;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,7 +54,8 @@ public class ComputerPlayer extends Player {
                 board.setPiece(row, column - 1, piece); // Adjust for zero-based index
                 board.display();
                 break;
-            } else {
+            }
+            else {
                 System.out.println("Invalid input or column full, please try again.");
             }
         }

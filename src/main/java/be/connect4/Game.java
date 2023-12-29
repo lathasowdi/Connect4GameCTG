@@ -1,4 +1,4 @@
-package be.ctg.Connect4.connect4;
+package be.connect4;
 
 /**
  * Class representing the Connect4 game logic.
@@ -8,6 +8,7 @@ public class Game {
     private Player player1;
     private Player player2;
     private Player currentPlayer;
+
 
     /**
      * Constructor for the Game class.

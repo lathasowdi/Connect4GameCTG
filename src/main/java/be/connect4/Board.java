@@ -1,11 +1,10 @@
-package be.ctg.Connect4.connect4;
+package be.connect4;
 
 /**
  * Class representing the game board in Connect4.
  */
 public class Board extends GameComponent {
     private String[][] board;
-
 
     /**
      * Constructor for the Board class.
