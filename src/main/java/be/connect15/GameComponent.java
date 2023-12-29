@@ -1,8 +1,10 @@
-package be.ctg.Connect4.connect4;
+package be.connect15;
 
 /**
  * Abstract class representing a game component, such as the game board.
  */
+
+
 public abstract class GameComponent {
     /**
      * Displays the current state of the game component.
@@ -30,6 +32,7 @@ public abstract class GameComponent {
      *
      * @return True if the game component is full, false otherwise.
      */
+
     public abstract boolean isBoardFull();
 
     public abstract String[][] getBoard();
@@ -41,5 +44,6 @@ public abstract class GameComponent {
      * @param column The column to set the piece in.
      * @param piece  The piece to set.
      */
+
     protected abstract void setPiece(int row, int column, String piece);
 }
