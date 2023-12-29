@@ -6,14 +6,18 @@ package be.ctg.Connect4.connect4;
 public class Board extends GameComponent {
     private String[][] board;
 
+
     /**
      * Constructor for the Board class.
+     *  board with 6 rows and 7 columns
      */
     public Board() {
         board = new String[6][7];
         initializeBoard();
     }
-
+    /**
+     * initializeBoard
+     */
     private void initializeBoard() {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
@@ -21,7 +25,9 @@ public class Board extends GameComponent {
             }
         }
     }
-
+    /**
+     * Displaying the board.
+     */
     @Override
     public void display() {
         System.out.println(" ");
@@ -41,16 +47,26 @@ public class Board extends GameComponent {
         return board;
     }
 
+
+
     @Override
     public void setPiece(int row, int column, String piece) {
         board[row][column] = piece;
     }
+
+
+    /**
+     * This method returns a boolean value true when the given column number is full.
+     */
 
     @Override
     public boolean isColumnFull(int column) {
         return (board[0][column - 1].equals(" £ ") || board[0][column - 1].equals(" $ "));
     }
 
+    /**
+     * This method is to get Next Available Slot (column) in the board.
+     */
     @Override
     public int getNextAvailableSlot(int column) {
         int position = 5;
@@ -60,6 +76,9 @@ public class Board extends GameComponent {
         return position;
     }
 
+    /**
+     * This method is for checking Board is full.
+     */
     @Override
     public boolean isBoardFull() {
         for (int i = 0; i < 1; i++) {

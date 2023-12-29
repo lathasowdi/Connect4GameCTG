@@ -10,7 +10,7 @@ public abstract  class Player {
     abstract int getPlayerNumber();
     abstract void play(Board board) throws InterruptedException;
 
-    //Non-abstract Methods
+    //Non-abstract Method check for valid input
      boolean isValidInput(String input) {
         return input.length() == 1 && input.charAt(0) >= '1' && input.charAt(0) <= '7';
     }
